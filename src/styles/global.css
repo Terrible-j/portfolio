@@ -1,2 +1,80 @@
 @import "tailwindcss";
 
+@font-face {
+    font-family: Azeret;
+    src: url(/fonts/AzeretMono-Variable.ttf);
+    font-style: normal;
+}
+@font-face {
+    font-family: Bytesized;
+    src: url(/fonts/Bytesized-Regular.ttf);
+    font-style: normal;
+}
+@font-face {
+    font-family: Chilax;
+    src: url(/fonts/Chillax-Variable.ttf);
+    font-style: normal;
+}
+@font-face {
+    font-family: Chubbo;
+    src: url(/fonts/Chubbo-Variable.ttf);
+    font-style: normal;
+}
+@font-face {
+    font-family: Comico;
+    src: url(/fonts/Comico-Regular.ttf);
+    font-style: normal;
+}
+@font-face {
+    font-family: Montserrat;
+    src: url(/fonts/Montserrat-Variable.ttf);
+    font-style: normal;
+}
+@font-face {
+    font-family: Sora;
+    src: url(/fonts/Sora-Variable.ttf);
+    font-style: normal;
+}
+@font-face {
+    font-family: Stardom;
+    src: url(/fonts/Stardom-Regular.ttf);
+    font-style: normal;
+}
+@font-face {
+    font-family: Gambetta;
+    src: url(/fonts/Gambetta-Variable.ttf);
+}
+
+
+
+
+
+
+
+
+@theme {
+    --color-background: #141414;
+    --color-foreground: #f2f2f2;
+
+    --font-azeret: Azeret;
+    --font-bytesized: Bytesized;
+    --font-chilax: Chilax;
+    --font-chubbo: Chubbo;
+    --font-comico: Comico;
+    --font-montserrat: Montserrat;
+    --font-sora: Sora;
+    --font-stardom: Stardom;
+    --font-gambetta: Gambetta;
+}
+
+html {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+}
+
+.index-title-class {
+    font-family: var(--font-stardom);
+    font-style: italic;
+    font-size: 100px;
+    letter-spacing: 20px;
+}

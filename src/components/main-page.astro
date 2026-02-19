@@ -1,41 +1,18 @@
-<div class="flex flex-col h-screen w-screen p-5">
+---
+import Col from "./col1.astro"
+---
 
-    <div class="flex h-5 mb-4">
-        <p class="text-[12px] font-gambetta font-semibold">This is a page : 19/02/2026</p>
-        <div class="absolute bg-foreground h-0.5 w-470 self-end"></div>
+<div class="flex flex-col h-screen w-screen pt-20 pb-20 p-10">
+    <div class="border h-full w-full">
+        <div class="flex flex-wrap flex-1 h-full w-full">
+
+            <div class="h-full w-auto select-none">
+                <p class="index-title-class mt-7 mb-3 text-[10vh]">TERRIBLE</p>
+            </div>
+            <div class="w-px h-full bg-foreground"></div>
+            
+            <Col />
+        </div>
+
     </div>
-
-    <div class="flex flex-wrap flex-1 gap-5">
-        <div class="flex flex-col w-220 gap-5">
-            <div class="h-40 w-full">
-                <p class="index-title-class">Terrible - J</p>
-            </div>
-
-            <div class="bg-foreground flex-1 h-full w-full">
-
-            </div>
-        </div>
-
-        <div class="flex flex-col w-75 gap-5">
-            <div class="bg-foreground h-75 w-full">
-
-            </div>
-
-            <div class="bg-foreground flex-1 h-full w-full">
-
-            </div>
-        </div>
-
-        <div class="flex flex-col w-165 gap-5">
-            <div class="bg-foreground h-150 w-full">
-
-            </div>
-
-            <div class="bg-foreground flex-1 h-full w-full">
-
-            </div>
-        </div>
-    </div>
-
-    
 </div>

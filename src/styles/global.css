@@ -55,8 +55,11 @@
 
 
 @theme {
-    --color-background: #0a0a0a;
-    --color-foreground: #ededed;
+    --color-background: #ded2c1;
+    --color-foreground: #000000;
+
+    --color-ibackground: #000000;
+    --color-iforeground: #ded2c1;
 
     --font-azeret: Azeret;
     --font-bytesized: Bytesized;
@@ -75,9 +78,26 @@ html {
 }
 
 .index-title-class {
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+
     font-family: var(--font-stardom);
-    font-style: italic;
-    font-size: 140px;
-    letter-spacing: 10px;
-    line-height: 160px;
+    letter-spacing: -20px;
+}
+
+.about-me-title-class {
+    font-family: var(--font-stardom);
+    color: var(--color-iforeground);
+    
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    letter-spacing: -5px;
+    font-size: 3vh;
+}
+
+.about-me-class {
+    font-family: var(--font-gambetta);
+    color: var(--color-iforeground);
+    font-weight: 500;
+    font-size: 1.4vh;
 }

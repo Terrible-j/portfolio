@@ -101,3 +101,12 @@ html {
     font-weight: 500;
     font-size: 1.4vh;
 }
+
+.vertical-text-class {
+    font-family: var(--font-gambetta);
+    color: var(--color-foreground);
+
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    letter-spacing: 5px;
+}

@@ -1,0 +1,57 @@
+---
+import Times from "./times.astro"
+---
+
+
+<div class="flex flex-col flex-1 h-full w-full p-5 gap-5">
+
+    <!-- TOP BOXES -->
+    <div class="flex gap-5 h-4/10">
+
+        <!-- ABOUT BOX -->
+        <div class="w-2/10 h-full bg-ibackground p-2.5 flex items-center">
+            <p class="about-me-class text-justify ml-5">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Vivamus lacinia dapibus libero sit amet lobortis. Morbi vel dignissim eros. 
+                Mauris sit amet egestas velit. Maecenas mattis augue nisi, a mollis turpis dictum id. 
+                <br>
+                <br>
+                Etiam a tempus risus, ac ultricies tortor. Aenean non nunc in metus scelerisque vulputate.            
+            </p>
+
+            <p class="about-me-title-class ml-5 select-none">ABOUT ME</p>
+        </div>
+
+
+        <!-- TIMES TEXT AND SEP -->
+        <div class="flex flex-col flex-1 h-full w-5/10">
+            <!-- TIMES -->
+            <div class="h-7/10 w-5/10">
+                <Times />
+            </div>
+
+            <!-- SEP -->
+            <div class="h-px w-3/10 bg-ibackground mt-5"></div>
+
+            <!-- TEXT -->
+            <div class="h-3/10 w-3/10 mt-4">
+                <p class="font-gambetta fon text-justify text-[1.4vh] text-foreground">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Vivamus lacinia dapibus libero sit amet lobortis. Morbi vel dignissim eros.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
+            </div>
+        </div>
+    </div>
+    
+
+    <!-- BOT BOX -->
+    <div class="h-6/10 w-3/10 bg-ibackground p-5 overflow-hidden select-none">
+        <img src="/public/assets/cat-image.png">
+    </div>
+    
+</div>
+
+<div class="">
+
+</div>

@@ -1,5 +1,6 @@
 ---
 import Times from "./times.astro"
+import WeatherReport from "./weather-report.astro"
 ---
 
 
@@ -26,19 +27,32 @@ import Times from "./times.astro"
         <!-- TIMES TEXT AND SEP -->
         <div class="flex flex-col flex-1 h-full w-5/10">
             <!-- TIMES -->
-            <div class="h-7/10 w-5/10">
-                <Times />
+            <div class="h-7/10 w-5/10 flex flex-wrap flex-1 gap-5">
+                <div class="w-3/10 ">
+                    <WeatherReport />
+                </div>
+                <div class="flex items-center"><div class="w-px h-4/10 bg-ibackground"></div></div>
+                
+                <div class="w-23/40">
+                    <Times />
+                </div>
+                
             </div>
 
             <!-- SEP -->
-            <div class="h-px w-3/10 bg-ibackground mt-5"></div>
+            <div class="h-px w-35/80 bg-ibackground mt-2"></div>
 
             <!-- TEXT -->
-            <div class="h-3/10 w-3/10 mt-4">
-                <p class="font-gambetta fon text-justify text-[1.4vh] text-foreground">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Vivamus lacinia dapibus libero sit amet lobortis. Morbi vel dignissim eros.
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            <div class="h-3/10 w-35/80 mt-4">
+                <p class="vertical-text-class text-[0.63vw] text-foreground">
+                    心に留め<br>ておくべき<br>十四のフレ<br>ーズが<br>ある：
+                    <br><br>
+                    らせん階段<br>カブト虫<br>廃墟の街<br>イチジクの<br>タルト<br>カブト虫<br>ドロローサ<br>への道<br>カブト虫<br>
+                    カブト虫<br>ジョット<br>天使<br>紫陽花<br>カブト虫<br>特異点<br>秘密の皇帝
+                    <br><br>
+                    そこへ行き<br>新月を待て<br>···
+                    <br><br>
+                    その時<br>こそ天国<br>が訪れる<br>のだ
                 </p>
             </div>
         </div>
@@ -47,7 +61,7 @@ import Times from "./times.astro"
 
     <!-- BOT BOX -->
     <div class="h-6/10 w-3/10 bg-ibackground p-5 overflow-hidden select-none">
-        <img src="/public/assets/cat-image.png">
+        <img src="/assets/cat-image.png">
     </div>
     
 </div>

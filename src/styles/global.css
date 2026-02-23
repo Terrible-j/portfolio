@@ -110,3 +110,18 @@ html {
     text-orientation: upright;
     letter-spacing: 5px;
 }
+
+.links-title-class {
+    font-family: var(--font-stardom);
+    color: var(--color-foreground);
+
+    font-size: 2.5vh;
+}
+
+.links-sub-class {
+    font-family: var(--font-gambetta);
+    color: var(--color-foreground);
+
+    font-size: 1.7vh;
+    font-weight: 400;
+}

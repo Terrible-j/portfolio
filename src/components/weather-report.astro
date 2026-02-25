@@ -1,14 +1,17 @@
 ---
 const apiKey = import.meta.env.WEATHER_REPORT;
 
-const weather = await fetch(`https://api.openweathermap.org/data/2.5/weather?lat=28.47&lon=-80.58&appid=${apiKey}`);
+const weather = await fetch(`https://api.openweathermap.org/data/2.5/weather?lat=28.25&lon=-80.36&units=metric&appid=${apiKey}`);
 const data = await weather.json();
+
+const temp = data.main.temp;
+const rtemp = temp.toFixed(1)
 ---
 
-<p class="font-gambetta text-[1.37vh] text-justify">
+<p class="font-gambetta text-[1.36vh] text-justify">
     North latitude, 28 degrees, 24 minutes, West longitude 80 degrees, 36 minutes...
     <br>
-    The current temperature is {data.main.temp}°C with {data.main.humidity}% humidity and a pressure of {data.main.pressure} hPa.
+    The current temperature is {rtemp}°C with {data.main.humidity}% humidity and a pressure of {data.main.pressure} hPa.
     <br>
     The Cape Canaveral Space Force Station closed during the new moon of February 3, 2003.
 </p>

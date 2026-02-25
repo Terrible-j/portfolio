@@ -1,7 +1,7 @@
 ---
 const apiKey = import.meta.env.WEATHER_REPORT;
 
-const weather = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=Cape Canaveral&units=metric&appid=${apiKey}`);
+const weather = await fetch(`https://api.openweathermap.org/data/2.5/weather?lat=28.47&lon=-80.58&appid=${apiKey}`);
 const data = await weather.json();
 ---
 

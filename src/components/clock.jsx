@@ -41,7 +41,11 @@ export default function WorldClock({ city, timeZone, format }) {
 
   return (
     <div>
-      {city} - {time}
+      <span class="flex">
+        <div>{city}</div>
+        <div class="ml-auto">{time}</div>
+        </span>
+        
     </div>
   );
 }
